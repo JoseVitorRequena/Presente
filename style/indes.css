@@ -1,23 +1,27 @@
 html, body {
-    margin: 0px;
-    width: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     height: 100%;
+    overflow: hidden; 
 }
 
 .main_body {
     height: 100%;
-    width: auto;
+    width: 100%;
     background-color: #c591c5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 h1 {
     color: white;
     font-size: 2.5em;
+    margin: 0; 
 }
 
 .buttons {
@@ -33,6 +37,7 @@ button {
     border-radius: 5px;
     background-color: #fff;
     color: #c591c5;
+    position: static; 
 }
 
 button:hover {
@@ -47,10 +52,13 @@ button:hover {
     height: 100%;
     width: 100%;
     background-color: #c591c5;
+    position: absolute; 
+    top: 0;
+    left: 0;
 }
 
 .heart-image {
-    width: 200px; 
+    width: 200px;
     height: auto;
 }
 
@@ -58,4 +66,32 @@ button:hover {
     color: white;
     font-size: 2em;
     margin-top: 20px;
+}
+
+#starsContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white, 0 0 10px white;
+    animation: twinkle infinite alternate;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
