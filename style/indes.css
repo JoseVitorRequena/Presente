@@ -1,0 +1,61 @@
+html, body {
+    margin: 0px;
+    width: auto;
+    height: 100%;
+}
+
+.main_body {
+    height: 100%;
+    width: auto;
+    background-color: #c591c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #c591c5;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+.heart-screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #c591c5;
+}
+
+.heart-image {
+    width: 200px; 
+    height: auto;
+}
+
+.heart-message {
+    color: white;
+    font-size: 2em;
+    margin-top: 20px;
+}
